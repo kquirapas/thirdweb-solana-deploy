@@ -3,7 +3,7 @@ import { ThirdwebSDK } from '@thirdweb-dev/sdk/solana';
 async function main() {
   // setup
   const NETWORK = "devnet";
-  const sdk = ThirdwebSDK.fromPrivateKey(NETWORK, "3cyuVPXj1aUQf3jWPepreBdb3Ta7si5KQtL5oLcYUJBfrtaxWQdq7bRjpM7Q4vfUM6KuEyCPWftTmvtcWdxHvo7a");
+  const sdk = ThirdwebSDK.fromPrivateKey(NETWORK, "INSERT YOUR PRIVATE KEY HERE");
 
   // deployment
   const deployed = await sdk.deployer.createNftCollection({
@@ -15,7 +15,7 @@ async function main() {
   // minting logic
   const nftCollection = await sdk.getNFTCollection(deployed);
 
-  const nft = await nftCollection.mintTo("6wc7hBozHmyUo9Nq8u3VvpQPGZa8gdgLRRVbvGzKAAGC", {
+  const nft = await nftCollection.mintTo("INSERT YOUR PUBLIC KEY HERE", {
     name: "My NFT Collection",
     description: "My personal NFT collection.",
     symbol: "MNFT"
