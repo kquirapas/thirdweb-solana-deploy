@@ -1,4 +1,4 @@
-# Usage
+# Setup
 
 Replace the `"INSERT YOUR PRIVATE KEY HERE"` with your **Private Key**
 ```typescript
@@ -17,4 +17,18 @@ const nft = await nftCollection.mintTo("INSERT YOUR PUBLIC KEY HERE", {
 	description: "My personal NFT collection.",
 	symbol: "MNFT"
 });
+```
+
+# Usage
+
+Install package dependencies
+
+```shell
+yarn install 
+```
+
+Run script
+
+```shell
+npx ts-node mint-nft-collection.ts
 ```
